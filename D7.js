@@ -19,20 +19,16 @@ console.log(stringArray("hello", "world"))
   Scrivi una funzione che torni un array di 10 elementi; ognuno di essi deve essere un valore random compreso tra 0 e 100 (incluso).
 */
 console.log("----------- ESERCIZIO 2 X-----------")
-/*
-let randomN = Math.floor(Math.random())*101
-// let numbers = [...randomN]
-let numbersLenght = numbers.length <= 10
 
-function arrayOfnumbers() {
-  for (let index = 0; index < numbers.length; index++) {
-    const number = numbers[index];
-    return number
+function arrayOfNumbers() {
+  let numbers = []
+  for (let i = Math.floor(Math.random()*101); i < 10; i++) {
+    const element = numbers[i];
+    element += numbers
+    console.log(numbers)
   }
 }
 
-console.log(arrayOfnumbers(numbers))
-*/
 /* ESERCIZIO 3 (filter)
   Scrivi una funzione per ricavare solamente i valori PARI da un array composto da soli valori numerici
 */
@@ -51,14 +47,14 @@ console.log(evenNumber)
 console.log("----------- ESERCIZIO 4 X-----------")
 
 let num = [30, 9, 94]
-/*let sum = 
+let sum = []
 
 let numberS = num.forEach(n => {
-  let result = n + sum
+  let result = n += sum
   console.log(result)
 }
 );
-*/
+
 /* ESERCIZIO 5 (reduce)
   Scrivi una funzione per sommare i numeri contenuti in un array
 */
@@ -95,6 +91,7 @@ function newArray(){
   Scrivi una funzione per creare un array contenente tutti i valori DISPARI da 1 a 99.
 */
 console.log("----------- ESERCIZIO 8 X -----------")
+
 
 
 /* Questo array di film verrà usato negli esercizi a seguire. Non modificarlo e scorri oltre per riprendere gli esercizi :) */
@@ -216,14 +213,25 @@ const movies = [
 /* ESERCIZIO 9 (forEach)
   Scrivi una funzione per trovare il film più vecchio nell'array fornito.
 */
+console.log("----------- ESERCIZIO 9 -----------")
+
+movies.forEach(movie => {
+  movie.Year 
+})
 
 /* ESERCIZIO 10
   Scrivi una funzione per ottenere il numero di film contenuti nell'array fornito.
 */
 
+console.log("----------- ESERCIZIO 10 -----------")
+
+
 /* ESERCIZIO 11 (map)
   Scrivi una funzione per creare un array con solamente i titoli dei film contenuti nell'array fornito.
 */
+console.log("----------- ESERCIZIO 11 -----------")
+
+movies.map(movieNames => console.log(movieNames.Title))
 
 /* ESERCIZIO 12 (filter)
   Scrivi una funzione per ottenere dall'array fornito solamente i film usciti nel millennio corrente.
