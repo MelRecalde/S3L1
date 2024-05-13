@@ -4,11 +4,12 @@
 */
 console.log("----------- ESERCIZIO 1 -----------")
 function stringArray(string1, string2) {
-  let split1 = string1.split("")
+  /*let split1 = string1.split("")
   //console.log(split1)
   let split2 = string2.split("")
   //console.log(split2)
-  const newArray = split1.slice(0, 2) + "," + split2.slice(-3)
+  */
+  const newArray = string1.slice(0, 2) + string2.slice(-3)
   //console.log(newArray)
   return newArray.toUpperCase()
 }
